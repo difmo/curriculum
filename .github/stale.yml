@@ -1,0 +1,28 @@
+pulls:
+  daysUntilStale: 21
+  daysUntilClose: 10
+  onlyLabels:
+    - pending-pr-revisions
+  markComment: >
+    This pull request is pending revisions but has had no activity
+    for 21 days. If no updates are made it will be closed in 10 days.
+    If you need assistance completing the revisions, please reach out
+    to our project maintainers on this pull request. Thanks you for you contribution.
+  staleLabel: "Close to expiring"
+
+issues:
+  daysUntilStale: 90
+  daysUntilClose: 14
+  stateLabel: wontfix
+  exemptProjects: true
+  exemptMilestones: true
+  exemptLabels:
+    - Epic
+    - pinned
+    - internal
+    - priority
+  markComment: >
+    Although it may very well be a good idea, this issue has not had
+    recent activity and is unlikely to be worked on. Consider creating
+    your own pull request for the issue if that is feasible. If no further
+    activity occurs, this will be closed in 14 days. Thank you for your contribution.
